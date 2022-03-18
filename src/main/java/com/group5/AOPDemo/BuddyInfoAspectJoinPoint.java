@@ -1,3 +1,5 @@
+package com.group5.AOPDemo;
+
 import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
@@ -7,7 +9,7 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class BuddyInfoAspectJoinPoint {
 
-    @Before("execution(public void BuddyInfo..set*(*))")
+    @Before("execution(public void com.group5.AOPDemo.BuddyInfo..set*(*))")
     public void loggingAdvice(JoinPoint joinPoint){
         System.out.println("Before running loggingAdvice on method="+joinPoint.toString());
 

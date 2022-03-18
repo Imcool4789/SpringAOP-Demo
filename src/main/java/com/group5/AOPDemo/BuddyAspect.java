@@ -1,3 +1,5 @@
+package com.group5.AOPDemo;
+
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
@@ -6,17 +8,17 @@ public class BuddyAspect {
 
     @Before("execution(public String getName())")
     public void getNameAdvice(){
-        System.out.println("Executing Advice on BuddyInfo getName()");
+        System.out.println("Executing Advice on com.group5.AOPDemo.BuddyInfo getName()");
     }
 
     @Before("execution(public String getAddress())")
     public void getAddressAdvice(){
-        System.out.println("Executing Advice on BuddyInfo getAddress()");
+        System.out.println("Executing Advice on com.group5.AOPDemo.BuddyInfo getAddress()");
     }
 
     @Before("execution(public String getPhone_num())")
     public void getNumAdvice(){
-        System.out.println("Executing Advice on BuddyInfo getPhone_num()");
+        System.out.println("Executing Advice on com.group5.AOPDemo.BuddyInfo getPhone_num()");
     }
 
     /**

@@ -1,3 +1,7 @@
+package com.group5.AOPDemo;
+
+import com.group5.AOPDemo.BuddyInfo;
+
 public class BuddyInfoService {
 
     private BuddyInfo buddy;
