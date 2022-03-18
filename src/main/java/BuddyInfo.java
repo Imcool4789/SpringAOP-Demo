@@ -23,6 +23,18 @@ public class BuddyInfo {
         return phone_num;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPhone_num(String phone_num) {
+        this.phone_num = phone_num;
+    }
+
     @Override
     public String toString() {
         return "name='" + name + '\'' +
