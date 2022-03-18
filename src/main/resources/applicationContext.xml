@@ -6,9 +6,6 @@
        http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
     <aop:aspectj-autoproxy/>
     <bean name="buddyInfo" class="com.group5.AOPDemo.BuddyInfo">
-        <property name="name" value="Homer"/>
-        <property name="address" value="Carleton"/>
-        <property name="phone_num" value="111-111-1111"/>
     </bean>
     <bean name="buddyInfoService" class="com.group5.AOPDemo.BuddyInfoService">
         <property name="buddyInfo" ref="buddyInfo"/>
