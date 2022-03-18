@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="https://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       https://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+    <bean name="buddyInfo" class="com.group5.AOPDemo.BuddyInfo">
+        <property name="name" value="Homer"/>
+        <property name="address" value="Carleton"/>
+        <property name="phone_num" value="111-111-1111"/>
+    </bean>
+    <bean name="buddyInfoService" class="com.group5.AOPDemo.BuddyInfoService">
+        <property name="buddy" ref="buddyInfo"/>
+    </bean>
+
+    <bean name="buddyAspect" class="com.group5.AOPDemo.BuddyAspect"/>
+    <bean name="buddyAspectPointcut" class="com.group5.AOPDemo.BuddyInfoAspectPointcut"/>
+    <bean name="buddyAspectJoinPoint" class="com.group5.AOPDemo.BuddyInfoAspectJoinPoint"/>
+    <bean name="buddyAfterAspect" class="com.group5.AOPDemo.BuddyAfterAspect"/>
+    <bean name="buddyAroundAspect" class="com.group5.AOPDemo.BuddyAroundAspect"/>
+</beans>
