@@ -6,6 +6,13 @@ public class BuddyInfo {
     private String address;
     private String phone_num;
 
+    public BuddyInfo()
+    {
+        this.name = "Bob";
+        this.address = "Carleton";
+        this.phone_num = "111-111-1111";
+    }
+
     public BuddyInfo(String name, String address, String phone_num) {
         this.name = name;
         this.address = address;

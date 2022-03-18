@@ -35,8 +35,7 @@ public class BuddyInfoAspectPointcut {
         System.out.println("Before executing service method");
     }
 
-    /**
-    @Pointcut("within()")
+    @Pointcut("within(com.group5.AOPDemo.*)")
     public void allMethodsPointcut(){}
-    */
+
 }

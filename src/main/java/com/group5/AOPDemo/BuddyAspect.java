@@ -21,10 +21,10 @@ public class BuddyAspect {
         System.out.println("Executing Advice on com.group5.AOPDemo.BuddyInfo getPhone_num()");
     }
 
-    /**
-    @Before("execution()")
+
+    @Before("execution(* com.group5.AOPDemo.*.get*())")
     public void getAllAdvice(){
         System.out.println("Service method getter called");
     }
-    */
+
 }

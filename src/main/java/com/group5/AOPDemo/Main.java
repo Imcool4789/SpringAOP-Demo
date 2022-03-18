@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        BuddyInfoService buddyService = context.getBean("buddyService",BuddyInfoService.class);
+        BuddyInfoService buddyService = context.getBean("buddyInfoService",BuddyInfoService.class);
         System.out.println("Name: " + buddyService.getBuddyInfo().getName());
         System.out.println("Address: " + buddyService.getBuddyInfo().getAddress());
         System.out.println("Phone Number: " + buddyService.getBuddyInfo().getPhone_num());
